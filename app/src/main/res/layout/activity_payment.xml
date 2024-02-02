@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E7E7"
+    tools:context=".PaymentActivity">
+
+    <TextView
+        android:id="@+id/tv_biaya_bulan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Biaya Perbulan"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.932" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/halfcircle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/ivBack_from_Payment"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/left_arrow"
+        app:civ_border_color="#00D1FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/persegi_panjang"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView_Wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/persegi_wait"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/tv_waitPay_wifi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:gravity="center"
+            android:text="Menunggu Pembayaran"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/tv_wifi"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:gravity="bottom|left"
+            android:text="Wifi"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView_Wifi"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:gravity="top|left"
+            android:text="Rp20.000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/tv_wifi"
+            app:layout_constraintStart_toStartOf="@+id/tv_wifi"
+            app:layout_constraintTop_toBottomOf="@+id/tv_wifi" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout1">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/persegi_panjang"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView_ListrikAir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/persegi_wait"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/tv_waitPay_ListrikAir"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:gravity="center"
+            android:text="Menunggu Pembayaran"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/tv_listrikAir"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:gravity="bottom|left"
+            android:text="Listrik &amp; Air"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView_ListrikAir"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:gravity="top|left"
+            android:text="Rp20.000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="@+id/tv_listrikAir"
+            app:layout_constraintStart_toStartOf="@+id/tv_listrikAir"
+            app:layout_constraintTop_toBottomOf="@+id/tv_listrikAir" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/persegi_panjang"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/persegi"
+            app:layout_constraintBottom_toBottomOf="@+id/iv3"
+            app:layout_constraintEnd_toEndOf="@+id/iv3"
+            app:layout_constraintTop_toTopOf="@+id/iv3" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:gravity="center"
+            android:text="Lunas"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/iv3"
+            app:layout_constraintEnd_toEndOf="@+id/iv3"
+            app:layout_constraintTop_toTopOf="@+id/iv3" />
+
+        <TextView
+            android:id="@+id/tv_Kas"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:gravity="bottom|left"
+            android:text="Kas"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/iv6"
+            app:layout_constraintStart_toStartOf="@+id/iv3"
+            app:layout_constraintTop_toTopOf="@+id/iv3" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:gravity="top|left"
+            android:text="Rp5.000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/iv3"
+            app:layout_constraintEnd_toEndOf="@+id/tv_Kas"
+            app:layout_constraintStart_toStartOf="@+id/tv_Kas"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Kas" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <ImageView
+            android:id="@+id/iv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/persegi_panjang"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView_Kebersihan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/persegi_wait"
+            app:layout_constraintBottom_toBottomOf="@+id/iv5"
+            app:layout_constraintEnd_toEndOf="@+id/iv5"
+            app:layout_constraintTop_toTopOf="@+id/iv5" />
+
+        <TextView
+            android:id="@+id/tv_waitPay_Kebersihan"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:gravity="center"
+            android:text="Menunggu Pembayaran"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/iv5"
+            app:layout_constraintEnd_toEndOf="@+id/iv5"
+            app:layout_constraintTop_toTopOf="@+id/iv5" />
+
+        <TextView
+            android:id="@+id/tv_Kebersihan"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:gravity="bottom|left"
+            android:text="Kebersihan"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView_Kebersihan"
+            app:layout_constraintStart_toStartOf="@+id/iv5"
+            app:layout_constraintTop_toTopOf="@+id/iv5" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:gravity="top|left"
+            android:text="Rp2.000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/iv5"
+            app:layout_constraintEnd_toEndOf="@+id/tv_Kebersihan"
+            app:layout_constraintStart_toStartOf="@+id/tv_Kebersihan"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Kebersihan" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
